@@ -2,7 +2,6 @@
 *,
 *::before,
 *::after {
-  color: black;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -20,6 +19,9 @@ body {
   background-color: #e5e7eb;
   border-color: #e5e7eb;
   transition: all 200ms;
+}
+.nav-icon > i {
+  color: #161c2d;
 }
 .nav-icon:hover {
   background-color: #dfe2e7;
@@ -41,6 +43,55 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 5vw;
+}
+.section-1-body {
+  z-index: 100;
+}
+.section-1-body > h1 {
+  font-size: 3.5vw;
+  line-height: 5vw;
+}
+.section-1-body > p {
+  color: rgb(203, 213, 225);
+}
+.section-1-body > button {
+  background: rgb(79, 70, 229);
+  outline: none;
+  border: none;
+  transition: all 200ms;
+}
+.section-1-body > button:hover {
+  background: rgb(67, 56, 202);
+}
+.section-1 > * {
+  color: white;
+}
+
+.card {
+  transition: all 200ms;
+}
+.card-text {
+  color: rgb(148, 163, 184);
+}
+.card:hover {
+  color: #e5e7eb;
+  background: rgb(79, 70, 229);
+}
+.card:hover .icon-container {
+  background: white;
+  color: rgb(79, 70, 229);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  background: rgb(79, 70, 229);
+  color: white;
 }
 
 .bg-gradient-to-b {
@@ -77,6 +128,16 @@ body {
     text-align: center;
     gap: 1vw;
     padding: 1vw;
+  }
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background: rgb(79, 70, 229);
+    color: white;
   }
 }
 @media all and (min-width: 993px) {

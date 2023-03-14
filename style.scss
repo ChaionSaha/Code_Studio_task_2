@@ -5,7 +5,6 @@
 *,
 *::before,
 *::after {
-	color: black;
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
@@ -23,6 +22,10 @@ body {
 	background-color: $border-color;
 	border-color: $border-color;
 	transition: all 200ms;
+
+	& > i {
+		color: #161c2d;
+	}
 
 	&:hover {
 		background-color: darken($border-color, 2%);
@@ -46,6 +49,61 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-bottom: 5vw;
+	&-body {
+		z-index: 100;
+
+		& > h1 {
+			font-size: 3.5vw;
+			line-height: 5vw;
+		}
+
+		& > p {
+			color: $text-slate;
+		}
+
+		& > button {
+			background: $bg-indigo-600;
+			outline: none;
+			border: none;
+			transition: all 200ms;
+			&:hover {
+				background: $bg-indigo-700;
+			}
+		}
+	}
+	& > * {
+		color: white;
+	}
+}
+
+.card {
+	transition: all 200ms;
+
+	&-text {
+		color: $text-slate-400;
+	}
+	&:hover {
+		color: $border-color;
+		background: $bg-indigo-600;
+
+		.icon-container {
+			background: white;
+			color: $bg-indigo-600;
+		}
+	}
+}
+
+.icon-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 5vw;
+	width: 5vw;
+	border-radius: 50%;
+	background: $bg-indigo-600;
+	// border: 1px solid orange;
+	color: white;
 }
 
 .bg-gradient-to-b {
@@ -90,6 +148,18 @@ body {
 		text-align: center;
 		gap: 1vw;
 		padding: 1vw;
+	}
+
+	.icon-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 10vw;
+		width: 10vw;
+		border-radius: 50%;
+		background: $bg-indigo-600;
+		// border: 1px solid orange;
+		color: white;
 	}
 }
 @media all and (min-width: 993px) {
