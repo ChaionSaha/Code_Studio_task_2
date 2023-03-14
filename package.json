@@ -1,0 +1,11 @@
+{
+	"name": "code_studio_task_02",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"sass": "sass ./style.scss ./style.css",
+	"dependencies": {
+		"bootstrap-icons": "^1.10.3",
+		"sass": "^1.59.2"
+	}
+}
