@@ -19,7 +19,7 @@
 	</head>
 	<body class="pb-5">
 		<!-- Navbar -->
-		<nav class="navbar fixed-top navbar-expand-lg bg-transparent">
+		<nav class="navbar fixed-top navbar-expand-lg" id="navbar">
 			<div class="container nav-container">
 				<div class="d-flex w-100 py-2 position-relative">
 					<a class="flex-grow-1 align-self-center">
@@ -27,6 +27,7 @@
 							src="./img/logo-light.png"
 							alt="logo"
 							class="navbar-brand"
+							id="nav-logo"
 						/>
 					</a>
 
@@ -38,12 +39,12 @@
 							class="navbar-nav text-uppercase d-flex justify-content-evenly w-100 align-items-center fw-bold"
 						>
 							<li class="nav-item">
-								<a href="#" class="nav-link text-light">Home</a>
+								<a href="#" class="nav-link">Home</a>
 							</li>
 							<li class="nav-item dropdown">
 								<a
 									href="#"
-									class="nav-link dropdown-toggle text-light"
+									class="nav-link dropdown-toggle"
 									role="button"
 									data-bs-toggle="dropdown"
 								>
@@ -136,7 +137,7 @@
 							<li class="nav-item dropdown">
 								<a
 									href="#"
-									class="nav-link dropdown-toggle text-light"
+									class="nav-link dropdown-toggle"
 									role="button"
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
@@ -191,7 +192,7 @@
 							<li class="nav-item dropdown">
 								<a
 									href="#"
-									class="nav-link dropdown-toggle text-light"
+									class="nav-link dropdown-toggle"
 									role="button"
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
@@ -285,7 +286,7 @@
 							<li class="nav-item dropdown">
 								<a
 									href="#"
-									class="nav-link dropdown-toggle text-light"
+									class="nav-link dropdown-toggle"
 									role="button"
 									data-bs-toggle="dropdown"
 									aria-expanded="false"
@@ -377,9 +378,7 @@
 								</ul>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link text-light"
-									>contact</a
-								>
+								<a href="#" class="nav-link">contact</a>
 							</li>
 						</ul>
 					</div>
@@ -416,7 +415,7 @@
 		</nav>
 
 		<!-- Main body -->
-		<section class="section-1 position-relative">
+		<section class="section-1 position-relative" id="section-1">
 			<div class="position-absolute bg-gradient-to-b"></div>
 			<div
 				class="h-100 container d-flex flex-column justify-content-center"
@@ -500,6 +499,9 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Section 3 -->
+		<div class="section-3"></div>
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -510,5 +512,6 @@
 			integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
 			crossorigin="anonymous"
 		></script>
+		<script src="./script.js"></script>
 	</body>
 </html>

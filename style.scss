@@ -42,6 +42,16 @@ body {
 	}
 }
 
+.navbar {
+	transition: all 200ms;
+}
+
+.nav-item {
+	& > a {
+		color: white;
+	}
+}
+
 .section-1 {
 	height: 100vh;
 	width: 100%;
@@ -115,6 +125,10 @@ body {
 		rgba(22, 28, 45, 0.8),
 		#161c2d
 	);
+}
+
+.section-3 {
+	height: 100vh;
 }
 
 @media all and (max-width: 992px) {
